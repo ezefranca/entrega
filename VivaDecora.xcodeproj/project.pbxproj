@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F02223F341021FFD838E319 /* libPods-VivaDecoraTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEA9C20F962959F6FA51F0E /* libPods-VivaDecoraTests.a */; };
 		8B579AB91D94BFD900850458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AB81D94BFD900850458 /* main.m */; };
 		8B579ABC1D94BFD900850458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579ABB1D94BFD900850458 /* AppDelegate.m */; };
 		8B579ABF1D94BFD900850458 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579ABE1D94BFD900850458 /* ViewController.m */; };
@@ -15,6 +16,12 @@
 		8B579AC71D94BFD900850458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AC51D94BFD900850458 /* LaunchScreen.storyboard */; };
 		8B579AD21D94BFD900850458 /* VivaDecoraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AD11D94BFD900850458 /* VivaDecoraTests.m */; };
 		8B579ADD1D94BFD900850458 /* VivaDecoraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579ADC1D94BFD900850458 /* VivaDecoraUITests.m */; };
+		8B579AEF1D94D72600850458 /* Avfm.h in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AEB1D94D72600850458 /* Avfm.h */; };
+		8B579AF01D94D72600850458 /* Avfm.m in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AEC1D94D72600850458 /* Avfm.m */; };
+		8B579AF11D94D72600850458 /* RootClass.h in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AED1D94D72600850458 /* RootClass.h */; };
+		8B579AF21D94D72600850458 /* RootClass.m in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AEE1D94D72600850458 /* RootClass.m */; };
+		C7EE038A75B58986B3B3367B /* libPods-VivaDecora.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EED24E62813B50FBBC2ABD28 /* libPods-VivaDecora.a */; };
+		FD6422DCB6D349D3C9DFDADE /* libPods-VivaDecoraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B95E5AE3B5520D2F07F6E165 /* libPods-VivaDecoraUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2868D9FAEA1899787659F1 /* Pods-VivaDecoraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecoraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecoraTests/Pods-VivaDecoraTests.release.xcconfig"; sourceTree = "<group>"; };
+		6BEA9C20F962959F6FA51F0E /* libPods-VivaDecoraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VivaDecoraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CA9208B8F76A4B8476B8C7 /* Pods-VivaDecoraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecoraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecoraUITests/Pods-VivaDecoraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		81FCCAEF1844846BBB94FF0C /* Pods-VivaDecoraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecoraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecoraUITests/Pods-VivaDecoraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82A5119DB6D764C88C7E329A /* Pods-VivaDecoraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecoraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecoraTests/Pods-VivaDecoraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B579AB41D94BFD900850458 /* VivaDecora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivaDecora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B579AB81D94BFD900850458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B579ABA1D94BFD900850458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +63,14 @@
 		8B579AD81D94BFD900850458 /* VivaDecoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VivaDecoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B579ADC1D94BFD900850458 /* VivaDecoraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VivaDecoraUITests.m; sourceTree = "<group>"; };
 		8B579ADE1D94BFD900850458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B579AEB1D94D72600850458 /* Avfm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avfm.h; sourceTree = "<group>"; };
+		8B579AEC1D94D72600850458 /* Avfm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avfm.m; sourceTree = "<group>"; };
+		8B579AED1D94D72600850458 /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
+		8B579AEE1D94D72600850458 /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
+		B89F976D17B975D2A0137439 /* Pods-VivaDecora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecora.release.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecora/Pods-VivaDecora.release.xcconfig"; sourceTree = "<group>"; };
+		B95E5AE3B5520D2F07F6E165 /* libPods-VivaDecoraUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VivaDecoraUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13F0C60F1DC74A213D1E298 /* Pods-VivaDecora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecora/Pods-VivaDecora.debug.xcconfig"; sourceTree = "<group>"; };
+		EED24E62813B50FBBC2ABD28 /* libPods-VivaDecora.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VivaDecora.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EE038A75B58986B3B3367B /* libPods-VivaDecora.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F02223F341021FFD838E319 /* libPods-VivaDecoraTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6422DCB6D349D3C9DFDADE /* libPods-VivaDecoraUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89633151C0609AA8FAE3E107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EED24E62813B50FBBC2ABD28 /* libPods-VivaDecora.a */,
+				6BEA9C20F962959F6FA51F0E /* libPods-VivaDecoraTests.a */,
+				B95E5AE3B5520D2F07F6E165 /* libPods-VivaDecoraUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AEE1CD47A7F23BF727D502E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D13F0C60F1DC74A213D1E298 /* Pods-VivaDecora.debug.xcconfig */,
+				B89F976D17B975D2A0137439 /* Pods-VivaDecora.release.xcconfig */,
+				82A5119DB6D764C88C7E329A /* Pods-VivaDecoraTests.debug.xcconfig */,
+				3D2868D9FAEA1899787659F1 /* Pods-VivaDecoraTests.release.xcconfig */,
+				78CA9208B8F76A4B8476B8C7 /* Pods-VivaDecoraUITests.debug.xcconfig */,
+				81FCCAEF1844846BBB94FF0C /* Pods-VivaDecoraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8B579AAB1D94BFD900850458 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +131,8 @@
 				8B579AD01D94BFD900850458 /* VivaDecoraTests */,
 				8B579ADB1D94BFD900850458 /* VivaDecoraUITests */,
 				8B579AB51D94BFD900850458 /* Products */,
+				8AEE1CD47A7F23BF727D502E /* Pods */,
+				89633151C0609AA8FAE3E107 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +149,7 @@
 		8B579AB61D94BFD900850458 /* VivaDecora */ = {
 			isa = PBXGroup;
 			children = (
+				8B579AEA1D94D72600850458 /* Models */,
 				8B579ABA1D94BFD900850458 /* AppDelegate.h */,
 				8B579ABB1D94BFD900850458 /* AppDelegate.m */,
 				8B579ABD1D94BFD900850458 /* ViewController.h */,
@@ -140,6 +189,17 @@
 			path = VivaDecoraUITests;
 			sourceTree = "<group>";
 		};
+		8B579AEA1D94D72600850458 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B579AEB1D94D72600850458 /* Avfm.h */,
+				8B579AEC1D94D72600850458 /* Avfm.m */,
+				8B579AED1D94D72600850458 /* RootClass.h */,
+				8B579AEE1D94D72600850458 /* RootClass.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B579AE11D94BFD900850458 /* Build configuration list for PBXNativeTarget "VivaDecora" */;
 			buildPhases = (
+				73CFF8ED722F4EFBA9D09DBF /* [CP] Check Pods Manifest.lock */,
 				8B579AB01D94BFD900850458 /* Sources */,
 				8B579AB11D94BFD900850458 /* Frameworks */,
 				8B579AB21D94BFD900850458 /* Resources */,
+				1B611CD7EB2C96382348B064 /* [CP] Embed Pods Frameworks */,
+				05DE7D7CD47DD9A367F5BAF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B579AE41D94BFD900850458 /* Build configuration list for PBXNativeTarget "VivaDecoraTests" */;
 			buildPhases = (
+				E13D30E8FBC02A0D47CC3A6D /* [CP] Check Pods Manifest.lock */,
 				8B579AC91D94BFD900850458 /* Sources */,
 				8B579ACA1D94BFD900850458 /* Frameworks */,
 				8B579ACB1D94BFD900850458 /* Resources */,
+				74B59752ECE25A791F965F00 /* [CP] Embed Pods Frameworks */,
+				9609B810A38139C2F00A49EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B579AE71D94BFD900850458 /* Build configuration list for PBXNativeTarget "VivaDecoraUITests" */;
 			buildPhases = (
+				1498C512015C2911B187C3A5 /* [CP] Check Pods Manifest.lock */,
 				8B579AD41D94BFD900850458 /* Sources */,
 				8B579AD51D94BFD900850458 /* Frameworks */,
 				8B579AD61D94BFD900850458 /* Resources */,
+				F2441F29ED68203032E9B01F /* [CP] Embed Pods Frameworks */,
+				EC4AE5AE534AAF150C049166 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,8 +319,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B579AC71D94BFD900850458 /* LaunchScreen.storyboard in Resources */,
+				8B579AEF1D94D72600850458 /* Avfm.h in Resources */,
 				8B579AC41D94BFD900850458 /* Assets.xcassets in Resources */,
+				8B579AF01D94D72600850458 /* Avfm.m in Resources */,
+				8B579AF11D94D72600850458 /* RootClass.h in Resources */,
 				8B579AC21D94BFD900850458 /* Main.storyboard in Resources */,
+				8B579AF21D94D72600850458 /* RootClass.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +343,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05DE7D7CD47DD9A367F5BAF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VivaDecora/Pods-VivaDecora-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1498C512015C2911B187C3A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1B611CD7EB2C96382348B064 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VivaDecora/Pods-VivaDecora-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73CFF8ED722F4EFBA9D09DBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74B59752ECE25A791F965F00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VivaDecoraTests/Pods-VivaDecoraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9609B810A38139C2F00A49EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VivaDecoraTests/Pods-VivaDecoraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13D30E8FBC02A0D47CC3A6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4AE5AE534AAF150C049166 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VivaDecoraUITests/Pods-VivaDecoraUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2441F29ED68203032E9B01F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VivaDecoraUITests/Pods-VivaDecoraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B579AB01D94BFD900850458 /* Sources */ = {
@@ -423,6 +634,7 @@
 		};
 		8B579AE21D94BFD900850458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D13F0C60F1DC74A213D1E298 /* Pods-VivaDecora.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 54JDK55DR5;
@@ -435,6 +647,7 @@
 		};
 		8B579AE31D94BFD900850458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B89F976D17B975D2A0137439 /* Pods-VivaDecora.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 54JDK55DR5;
@@ -447,6 +660,7 @@
 		};
 		8B579AE51D94BFD900850458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A5119DB6D764C88C7E329A /* Pods-VivaDecoraTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 54JDK55DR5;
@@ -460,6 +674,7 @@
 		};
 		8B579AE61D94BFD900850458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D2868D9FAEA1899787659F1 /* Pods-VivaDecoraTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 54JDK55DR5;
@@ -473,6 +688,7 @@
 		};
 		8B579AE81D94BFD900850458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CA9208B8F76A4B8476B8C7 /* Pods-VivaDecoraUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = VivaDecoraUITests/Info.plist;
@@ -485,6 +701,7 @@
 		};
 		8B579AE91D94BFD900850458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81FCCAEF1844846BBB94FF0C /* Pods-VivaDecoraUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = VivaDecoraUITests/Info.plist;
@@ -514,6 +731,7 @@
 				8B579AE31D94BFD900850458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B579AE41D94BFD900850458 /* Build configuration list for PBXNativeTarget "VivaDecoraTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +740,7 @@
 				8B579AE61D94BFD900850458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B579AE71D94BFD900850458 /* Build configuration list for PBXNativeTarget "VivaDecoraUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +749,7 @@
 				8B579AE91D94BFD900850458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
