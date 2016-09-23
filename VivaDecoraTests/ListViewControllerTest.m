@@ -29,7 +29,6 @@ describe(@"ListViewController", ^{
         expect(viewController).to.beInstanceOf([ListViewController class]);
     });
     
-    
     it(@"should have an outlet for the  collectionView", ^{
         expect(viewController.collectionView).toNot.beNil();
     });
@@ -45,3 +44,29 @@ describe(@"ListViewController", ^{
 });
 
 SpecEnd
+
+
+
+SpecBegin(ListCellSpec)
+
+describe(@"UICollectionViewCell", ^{
+    __block ListCell *cell;
+    __block ListViewController *v;
+    beforeEach(^{
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UINavigationController *nav = [mainStoryboard instantiateInitialViewController];
+        v= (ListViewController*)[nav visibleViewController];
+        static NSString *identifier = @"ListCell";
+        cell = [[ListCell alloc]init];
+        [cell setRestorationIdentifier:identifier];
+         [[v collectionView]reloadData];
+        expect(cell).toNot.beNil();
+    });
+    
+    it(@"should have a prototype cell on the collectionView", ^{
+        expect(cell).toNot.beNil();
+    });
+});
+
+SpecEnd
+

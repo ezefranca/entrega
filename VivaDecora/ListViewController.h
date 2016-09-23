@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ListCell.h"
 
 @interface ListViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
