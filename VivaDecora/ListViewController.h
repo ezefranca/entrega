@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface ListViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @end
 
