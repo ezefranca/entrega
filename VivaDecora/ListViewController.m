@@ -9,6 +9,7 @@
 #import "ListViewController.h"
 #import "AFNetworking.h"
 #import "RootClass.h"
+#import "ListApi.h"
 
 @interface ListViewController ()
 
@@ -33,19 +34,18 @@
 }
 
 - (void)teste {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager GET:@"https://aviewfrommyseat.com/avf/api/featured.php?appkey=f6bcd8e8bb853890f4fb2be8ce0418fa" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-      //  NSLog(@"JSON: %@", responseObject);
-        RootClass *c = [[RootClass alloc] initWithDictionary:responseObject error:nil];
-        [c.avfms enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            Avfm *d = [[Avfm alloc]initWithDictionary:obj error:nil];
-            NSLog(@"%@", d.section);
-        }];
+    ListApi *api = [[ListApi alloc]init];
+    
+    [api download:@"" parameters:nil success:^(NSMutableArray<ListViewModel *> * _Nonnull result) {
+        self.manager = [[ListViewManager alloc]initWithViewModels:result];
+        [[self collectionView]reloadData];
+    } failure:^(NSURLSessionTask * _Nullable task, NSError * _Nonnull error) {
         
-    } failure:^(NSURLSessionTask *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
     }];
+
 }
+
+
 
 
 @end

@@ -56,15 +56,33 @@ describe(@"UICollectionViewCell", ^{
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UINavigationController *nav = [mainStoryboard instantiateInitialViewController];
         v= (ListViewController*)[nav visibleViewController];
-        static NSString *identifier = @"ListCell";
-        cell = [[ListCell alloc]init];
-        [cell setRestorationIdentifier:identifier];
-         [[v collectionView]reloadData];
+        static NSString *identifier = @"CellListIdentifier";
+    
+ //       v.collectionView.dataSource =
+//        id modelObjectMock = [OCMockObject mockForClass:[SomeModelObjectReference class]];
+//        [[[modelObjectMock stub] andReturn:[self buildModelObjectsForTest]] modelObjects];
+//        
+//        CellContentDataSource *dataSource = [CellContentDataSource new];
+//        dataSource.someModelObjectReference = modelObjectMock;
+//        v.collectionView.dataSource = dataSource;
+        
+        // Here we call the data source method directly
+        //cell = [[ListCell alloc]init];
+//        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+//        cell = (ListCell *)[v.collectionView
+//                                   dequeueReusableCellWithReuseIdentifier:@"CellListIdentifier" forIndexPath:indexPath];
+//        [cell setup];
+//cell.titleLabel.text = @"lalala";
+//        
         expect(cell).toNot.beNil();
     });
     
     it(@"should have a prototype cell on the collectionView", ^{
         expect(cell).toNot.beNil();
+    });
+    
+    it(@"should have a imageView in collectionViewCell", ^{
+        expect(cell.imageView).toNot.beNil();
     });
 });
 

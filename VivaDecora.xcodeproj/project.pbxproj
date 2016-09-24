@@ -26,6 +26,10 @@
 		8B579AFB1D94FC6A00850458 /* ListViewController+Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AFA1D94FC6A00850458 /* ListViewController+Delegate.m */; };
 		8B579AFE1D94FC8C00850458 /* ListViewController+DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AFD1D94FC8C00850458 /* ListViewController+DataSource.m */; };
 		8B579B031D95079100850458 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579B021D95079100850458 /* ListCell.m */; };
+		8B579B061D962B2300850458 /* ListViewController+FlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579B051D962B2300850458 /* ListViewController+FlowLayout.m */; };
+		8BB20ACA1D96CD0A007D0607 /* ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB20AC91D96CD0A007D0607 /* ListViewModel.m */; };
+		8BB20ACE1D96D1B4007D0607 /* ListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB20ACD1D96D1B4007D0607 /* ListApi.m */; };
+		8BB20AD71D970312007D0607 /* ListViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB20AD61D970312007D0607 /* ListViewManager.m */; };
 		C7EE038A75B58986B3B3367B /* libPods-VivaDecora.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EED24E62813B50FBBC2ABD28 /* libPods-VivaDecora.a */; };
 		FD6422DCB6D349D3C9DFDADE /* libPods-VivaDecoraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B95E5AE3B5520D2F07F6E165 /* libPods-VivaDecoraUITests.a */; };
 /* End PBXBuildFile section */
@@ -80,6 +84,14 @@
 		8B579AFD1D94FC8C00850458 /* ListViewController+DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ListViewController+DataSource.m"; path = "Controllers/ListViewController+DataSource.m"; sourceTree = "<group>"; };
 		8B579B011D95079100850458 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListCell.h; path = View/ListCell.h; sourceTree = "<group>"; };
 		8B579B021D95079100850458 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListCell.m; path = View/ListCell.m; sourceTree = "<group>"; };
+		8B579B041D962B2300850458 /* ListViewController+FlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ListViewController+FlowLayout.h"; path = "Controllers/ListViewController+FlowLayout.h"; sourceTree = "<group>"; };
+		8B579B051D962B2300850458 /* ListViewController+FlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ListViewController+FlowLayout.m"; path = "Controllers/ListViewController+FlowLayout.m"; sourceTree = "<group>"; };
+		8BB20AC81D96CD0A007D0607 /* ListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewModel.h; path = ViewModel/ListViewModel.h; sourceTree = "<group>"; };
+		8BB20AC91D96CD0A007D0607 /* ListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewModel.m; path = ViewModel/ListViewModel.m; sourceTree = "<group>"; };
+		8BB20ACC1D96D1B4007D0607 /* ListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListApi.h; path = Network/ListApi.h; sourceTree = "<group>"; };
+		8BB20ACD1D96D1B4007D0607 /* ListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListApi.m; path = Network/ListApi.m; sourceTree = "<group>"; };
+		8BB20AD51D970312007D0607 /* ListViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewManager.h; path = Manager/ListViewManager.h; sourceTree = "<group>"; };
+		8BB20AD61D970312007D0607 /* ListViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewManager.m; path = Manager/ListViewManager.m; sourceTree = "<group>"; };
 		B89F976D17B975D2A0137439 /* Pods-VivaDecora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecora.release.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecora/Pods-VivaDecora.release.xcconfig"; sourceTree = "<group>"; };
 		B95E5AE3B5520D2F07F6E165 /* libPods-VivaDecoraUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VivaDecoraUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13F0C60F1DC74A213D1E298 /* Pods-VivaDecora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecora/Pods-VivaDecora.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,16 +174,12 @@
 		8B579AB61D94BFD900850458 /* VivaDecora */ = {
 			isa = PBXGroup;
 			children = (
-				8B579B001D95076E00850458 /* View */,
 				8B579AEA1D94D72600850458 /* Models */,
-				8B579ABA1D94BFD900850458 /* AppDelegate.h */,
-				8B579ABB1D94BFD900850458 /* AppDelegate.m */,
-				8B579ABD1D94BFD900850458 /* ListViewController.h */,
-				8B579ABE1D94BFD900850458 /* ListViewController.m */,
-				8B579AF91D94FC6A00850458 /* ListViewController+Delegate.h */,
-				8B579AFA1D94FC6A00850458 /* ListViewController+Delegate.m */,
-				8B579AFC1D94FC8C00850458 /* ListViewController+DataSource.h */,
-				8B579AFD1D94FC8C00850458 /* ListViewController+DataSource.m */,
+				8B579B001D95076E00850458 /* View */,
+				8BB20AD21D97029C007D0607 /* Controller */,
+				8BB20AD11D97028C007D0607 /* App */,
+				8BB20ACB1D96D183007D0607 /* Network */,
+				8BB20AD31D9702DF007D0607 /* Manager */,
 				8B579AC01D94BFD900850458 /* Main.storyboard */,
 				8B579AC31D94BFD900850458 /* Assets.xcassets */,
 				8B579AC51D94BFD900850458 /* LaunchScreen.storyboard */,
@@ -211,6 +219,7 @@
 		8B579AEA1D94D72600850458 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8BB20AC71D96CCE2007D0607 /* ViewModel */,
 				8B579AEB1D94D72600850458 /* Avfm.h */,
 				8B579AEC1D94D72600850458 /* Avfm.m */,
 				8B579AED1D94D72600850458 /* RootClass.h */,
@@ -226,6 +235,65 @@
 				8B579B021D95079100850458 /* ListCell.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		8B579B071D962F0500850458 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8B579ABD1D94BFD900850458 /* ListViewController.h */,
+				8B579ABE1D94BFD900850458 /* ListViewController.m */,
+				8B579AF91D94FC6A00850458 /* ListViewController+Delegate.h */,
+				8B579AFA1D94FC6A00850458 /* ListViewController+Delegate.m */,
+				8B579AFC1D94FC8C00850458 /* ListViewController+DataSource.h */,
+				8B579AFD1D94FC8C00850458 /* ListViewController+DataSource.m */,
+				8B579B041D962B2300850458 /* ListViewController+FlowLayout.h */,
+				8B579B051D962B2300850458 /* ListViewController+FlowLayout.m */,
+			);
+			name = ListViewController;
+			sourceTree = "<group>";
+		};
+		8BB20AC71D96CCE2007D0607 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8BB20AC81D96CD0A007D0607 /* ListViewModel.h */,
+				8BB20AC91D96CD0A007D0607 /* ListViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8BB20ACB1D96D183007D0607 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8BB20ACC1D96D1B4007D0607 /* ListApi.h */,
+				8BB20ACD1D96D1B4007D0607 /* ListApi.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		8BB20AD11D97028C007D0607 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B579ABA1D94BFD900850458 /* AppDelegate.h */,
+				8B579ABB1D94BFD900850458 /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		8BB20AD21D97029C007D0607 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B579B071D962F0500850458 /* ListViewController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8BB20AD31D9702DF007D0607 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8BB20AD51D970312007D0607 /* ListViewManager.h */,
+				8BB20AD61D970312007D0607 /* ListViewManager.m */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,8 +584,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B579AF41D94DB5600850458 /* Avfm.m in Sources */,
+				8BB20ACE1D96D1B4007D0607 /* ListApi.m in Sources */,
 				8B579B031D95079100850458 /* ListCell.m in Sources */,
 				8B579AFE1D94FC8C00850458 /* ListViewController+DataSource.m in Sources */,
+				8B579B061D962B2300850458 /* ListViewController+FlowLayout.m in Sources */,
+				8BB20ACA1D96CD0A007D0607 /* ListViewModel.m in Sources */,
+				8BB20AD71D970312007D0607 /* ListViewManager.m in Sources */,
 				8B579AF61D94DB5600850458 /* RootClass.m in Sources */,
 				8B579ABF1D94BFD900850458 /* ListViewController.m in Sources */,
 				8B579ABC1D94BFD900850458 /* AppDelegate.m in Sources */,
@@ -596,6 +668,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -643,6 +716,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

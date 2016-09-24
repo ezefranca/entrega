@@ -16,15 +16,23 @@
 
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 10;
+    return self.manager.models.count;
 }
 
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier = @"ListCell";
-    ListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
-    cell.image.image = [[UIImage alloc]init];
-    return cell;;
+    return [self getReusableUICollectionViewCell:collectionView forIndexPath:indexPath];
+}
+
+-(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(nonnull UICollectionViewCell *)cell forItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    self.cell = (ListCell *)cell;
+    [self.cell setup:[self.manager.models objectAtIndex:indexPath.row]];
+    NSLog(@"%ld  ROWW", (long)indexPath.row);
+}
+
+-(ListCell *)getReusableUICollectionViewCell: (UICollectionView *)collectionView forIndexPath:(NSIndexPath *)indexPath{
+    self.cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_REUSE_IDENTIFIER forIndexPath:indexPath];
+    return self.cell;
 }
 
 @end
