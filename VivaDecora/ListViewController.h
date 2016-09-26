@@ -6,11 +6,13 @@
 //  Copyright © 2016 Ezequiel França @ezefranca. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DetailsViewController.h"
 #import "ListCell.h"
 #import "ListViewManager.h"
+#import <UIKit/UIKit.h>
 
-#define CELL_REUSE_IDENTIFIER @"CellListIdentifier"
+#define CELL_LIST_REUSE_IDENTIFIER @"CellListIdentifier"
+#define CONTROLLER_DETAILS_IDENTIFIER @"DetailController"
 
 @interface ListViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;

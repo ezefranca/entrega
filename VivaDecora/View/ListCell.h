@@ -7,16 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "ListViewModel.h"
+#import "FLAnimatedImageView.h"
 
-@interface ListCell : UICollectionViewCell
+#define GIF_URL [[NSBundle mainBundle]URLForResource: @"loader" withExtension:@"gif"]
 
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@protocol CellStyle
+
+@optional -(void)setShadow:(UIColor*)color;
+@optional -(void)setBorders;
+
+@end
+
+
+@interface ListCell : UICollectionViewCell <CellStyle>
+
+@property (strong, nonatomic) IBOutlet FLAnimatedImageView *imageView;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *subLabel;
 @property (strong, nonatomic) IBOutlet UILabel *descLabel;
 @property (strong, nonatomic) IBOutlet UILabel *countLabel;
 
--(void)setup: (ListViewModel*)model;
+-(void)setup:(id)model;
 
 @end

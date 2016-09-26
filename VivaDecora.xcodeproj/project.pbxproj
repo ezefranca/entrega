@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4F02223F341021FFD838E319 /* libPods-VivaDecoraTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEA9C20F962959F6FA51F0E /* libPods-VivaDecoraTests.a */; };
+		8B30C2D11D98C6C50030270C /* DetailsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B30C2D01D98C6C50030270C /* DetailsApi.m */; };
+		8B30C2D41D98CBF40030270C /* DetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B30C2D31D98CBF40030270C /* DetailViewModel.m */; };
+		8B30C2DA1D98DD1C0030270C /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B30C2D91D98DD1C0030270C /* loader.gif */; };
+		8B30C2DE1D98E8F50030270C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B30C2DD1D98E8F50030270C /* ViewController.m */; };
 		8B579AB91D94BFD900850458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AB81D94BFD900850458 /* main.m */; };
 		8B579ABC1D94BFD900850458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579ABB1D94BFD900850458 /* AppDelegate.m */; };
 		8B579ABF1D94BFD900850458 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579ABE1D94BFD900850458 /* ListViewController.m */; };
@@ -16,17 +20,23 @@
 		8B579AC71D94BFD900850458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AC51D94BFD900850458 /* LaunchScreen.storyboard */; };
 		8B579AD21D94BFD900850458 /* VivaDecoraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AD11D94BFD900850458 /* VivaDecoraTests.m */; };
 		8B579ADD1D94BFD900850458 /* VivaDecoraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579ADC1D94BFD900850458 /* VivaDecoraUITests.m */; };
-		8B579AEF1D94D72600850458 /* Avfm.h in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AEB1D94D72600850458 /* Avfm.h */; };
-		8B579AF01D94D72600850458 /* Avfm.m in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AEC1D94D72600850458 /* Avfm.m */; };
-		8B579AF11D94D72600850458 /* RootClass.h in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AED1D94D72600850458 /* RootClass.h */; };
-		8B579AF21D94D72600850458 /* RootClass.m in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AEE1D94D72600850458 /* RootClass.m */; };
-		8B579AF41D94DB5600850458 /* Avfm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AEC1D94D72600850458 /* Avfm.m */; };
-		8B579AF61D94DB5600850458 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AEE1D94D72600850458 /* RootClass.m */; };
+		8B579AEF1D94D72600850458 /* ListAvfm.h in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AEB1D94D72600850458 /* ListAvfm.h */; };
+		8B579AF01D94D72600850458 /* ListAvfm.m in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AEC1D94D72600850458 /* ListAvfm.m */; };
+		8B579AF11D94D72600850458 /* ListRootClass.h in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AED1D94D72600850458 /* ListRootClass.h */; };
+		8B579AF21D94D72600850458 /* ListRootClass.m in Resources */ = {isa = PBXBuildFile; fileRef = 8B579AEE1D94D72600850458 /* ListRootClass.m */; };
+		8B579AF41D94DB5600850458 /* ListAvfm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AEC1D94D72600850458 /* ListAvfm.m */; };
+		8B579AF61D94DB5600850458 /* ListRootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AEE1D94D72600850458 /* ListRootClass.m */; };
 		8B579AF81D94F32100850458 /* ListViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AF71D94F32100850458 /* ListViewControllerTest.m */; };
 		8B579AFB1D94FC6A00850458 /* ListViewController+Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AFA1D94FC6A00850458 /* ListViewController+Delegate.m */; };
 		8B579AFE1D94FC8C00850458 /* ListViewController+DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AFD1D94FC8C00850458 /* ListViewController+DataSource.m */; };
 		8B579B031D95079100850458 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579B021D95079100850458 /* ListCell.m */; };
 		8B579B061D962B2300850458 /* ListViewController+FlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579B051D962B2300850458 /* ListViewController+FlowLayout.m */; };
+		8B960A881D979779004B5F6E /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B960A871D979779004B5F6E /* DetailsViewController.m */; };
+		8B960A8B1D979AD9004B5F6E /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B960A8A1D979AD9004B5F6E /* DetailCell.m */; };
+		8B960A901D984968004B5F6E /* DetailsAvfm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B960A8D1D984968004B5F6E /* DetailsAvfm.m */; };
+		8B960A911D984968004B5F6E /* DetailsRootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B960A8F1D984968004B5F6E /* DetailsRootClass.m */; };
+		8B960A941D984C43004B5F6E /* DetailsViewController+Datasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B960A931D984C43004B5F6E /* DetailsViewController+Datasource.m */; };
+		8B960A971D984C63004B5F6E /* DetailsViewController+Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B960A961D984C63004B5F6E /* DetailsViewController+Delegate.m */; };
 		8BB20ACA1D96CD0A007D0607 /* ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB20AC91D96CD0A007D0607 /* ListViewModel.m */; };
 		8BB20ACE1D96D1B4007D0607 /* ListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB20ACD1D96D1B4007D0607 /* ListApi.m */; };
 		8BB20AD71D970312007D0607 /* ListViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB20AD61D970312007D0607 /* ListViewManager.m */; };
@@ -57,6 +67,13 @@
 		78CA9208B8F76A4B8476B8C7 /* Pods-VivaDecoraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecoraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecoraUITests/Pods-VivaDecoraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		81FCCAEF1844846BBB94FF0C /* Pods-VivaDecoraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecoraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecoraUITests/Pods-VivaDecoraUITests.release.xcconfig"; sourceTree = "<group>"; };
 		82A5119DB6D764C88C7E329A /* Pods-VivaDecoraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecoraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecoraTests/Pods-VivaDecoraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B30C2CF1D98C6C50030270C /* DetailsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsApi.h; path = Network/DetailsApi.h; sourceTree = "<group>"; };
+		8B30C2D01D98C6C50030270C /* DetailsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsApi.m; path = Network/DetailsApi.m; sourceTree = "<group>"; };
+		8B30C2D21D98CBF40030270C /* DetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewModel.h; path = ViewModel/DetailViewModel.h; sourceTree = "<group>"; };
+		8B30C2D31D98CBF40030270C /* DetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewModel.m; path = ViewModel/DetailViewModel.m; sourceTree = "<group>"; };
+		8B30C2D91D98DD1C0030270C /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		8B30C2DC1D98E8F50030270C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controllers/ViewController.h; sourceTree = "<group>"; };
+		8B30C2DD1D98E8F50030270C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controllers/ViewController.m; sourceTree = "<group>"; };
 		8B579AB41D94BFD900850458 /* VivaDecora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivaDecora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B579AB81D94BFD900850458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B579ABA1D94BFD900850458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,10 +90,10 @@
 		8B579AD81D94BFD900850458 /* VivaDecoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VivaDecoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B579ADC1D94BFD900850458 /* VivaDecoraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VivaDecoraUITests.m; sourceTree = "<group>"; };
 		8B579ADE1D94BFD900850458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B579AEB1D94D72600850458 /* Avfm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avfm.h; sourceTree = "<group>"; };
-		8B579AEC1D94D72600850458 /* Avfm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avfm.m; sourceTree = "<group>"; };
-		8B579AED1D94D72600850458 /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
-		8B579AEE1D94D72600850458 /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
+		8B579AEB1D94D72600850458 /* ListAvfm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAvfm.h; sourceTree = "<group>"; };
+		8B579AEC1D94D72600850458 /* ListAvfm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAvfm.m; sourceTree = "<group>"; };
+		8B579AED1D94D72600850458 /* ListRootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListRootClass.h; sourceTree = "<group>"; };
+		8B579AEE1D94D72600850458 /* ListRootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListRootClass.m; sourceTree = "<group>"; };
 		8B579AF71D94F32100850458 /* ListViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewControllerTest.m; sourceTree = "<group>"; };
 		8B579AF91D94FC6A00850458 /* ListViewController+Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ListViewController+Delegate.h"; path = "Controllers/ListViewController+Delegate.h"; sourceTree = "<group>"; };
 		8B579AFA1D94FC6A00850458 /* ListViewController+Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ListViewController+Delegate.m"; path = "Controllers/ListViewController+Delegate.m"; sourceTree = "<group>"; };
@@ -86,6 +103,18 @@
 		8B579B021D95079100850458 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListCell.m; path = View/ListCell.m; sourceTree = "<group>"; };
 		8B579B041D962B2300850458 /* ListViewController+FlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ListViewController+FlowLayout.h"; path = "Controllers/ListViewController+FlowLayout.h"; sourceTree = "<group>"; };
 		8B579B051D962B2300850458 /* ListViewController+FlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ListViewController+FlowLayout.m"; path = "Controllers/ListViewController+FlowLayout.m"; sourceTree = "<group>"; };
+		8B960A861D979779004B5F6E /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewController.h; path = Controllers/DetailsViewController.h; sourceTree = "<group>"; };
+		8B960A871D979779004B5F6E /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsViewController.m; path = Controllers/DetailsViewController.m; sourceTree = "<group>"; };
+		8B960A891D979AD9004B5F6E /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailCell.h; path = View/DetailCell.h; sourceTree = "<group>"; };
+		8B960A8A1D979AD9004B5F6E /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailCell.m; path = View/DetailCell.m; sourceTree = "<group>"; };
+		8B960A8C1D984968004B5F6E /* DetailsAvfm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsAvfm.h; sourceTree = "<group>"; };
+		8B960A8D1D984968004B5F6E /* DetailsAvfm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsAvfm.m; sourceTree = "<group>"; };
+		8B960A8E1D984968004B5F6E /* DetailsRootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsRootClass.h; sourceTree = "<group>"; };
+		8B960A8F1D984968004B5F6E /* DetailsRootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsRootClass.m; sourceTree = "<group>"; };
+		8B960A921D984C43004B5F6E /* DetailsViewController+Datasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DetailsViewController+Datasource.h"; path = "Controllers/DetailsViewController+Datasource.h"; sourceTree = "<group>"; };
+		8B960A931D984C43004B5F6E /* DetailsViewController+Datasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DetailsViewController+Datasource.m"; path = "Controllers/DetailsViewController+Datasource.m"; sourceTree = "<group>"; };
+		8B960A951D984C63004B5F6E /* DetailsViewController+Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DetailsViewController+Delegate.h"; path = "Controllers/DetailsViewController+Delegate.h"; sourceTree = "<group>"; };
+		8B960A961D984C63004B5F6E /* DetailsViewController+Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DetailsViewController+Delegate.m"; path = "Controllers/DetailsViewController+Delegate.m"; sourceTree = "<group>"; };
 		8BB20AC81D96CD0A007D0607 /* ListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewModel.h; path = ViewModel/ListViewModel.h; sourceTree = "<group>"; };
 		8BB20AC91D96CD0A007D0607 /* ListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewModel.m; path = ViewModel/ListViewModel.m; sourceTree = "<group>"; };
 		8BB20ACC1D96D1B4007D0607 /* ListApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListApi.h; path = Network/ListApi.h; sourceTree = "<group>"; };
@@ -149,6 +178,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8B30C2DB1D98E8D60030270C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8B30C2DC1D98E8F50030270C /* ViewController.h */,
+				8B30C2DD1D98E8F50030270C /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		8B579AAB1D94BFD900850458 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +219,7 @@
 				8BB20ACB1D96D183007D0607 /* Network */,
 				8BB20AD31D9702DF007D0607 /* Manager */,
 				8B579AC01D94BFD900850458 /* Main.storyboard */,
+				8B30C2D91D98DD1C0030270C /* loader.gif */,
 				8B579AC31D94BFD900850458 /* Assets.xcassets */,
 				8B579AC51D94BFD900850458 /* LaunchScreen.storyboard */,
 				8B579AC81D94BFD900850458 /* Info.plist */,
@@ -220,10 +259,14 @@
 			isa = PBXGroup;
 			children = (
 				8BB20AC71D96CCE2007D0607 /* ViewModel */,
-				8B579AEB1D94D72600850458 /* Avfm.h */,
-				8B579AEC1D94D72600850458 /* Avfm.m */,
-				8B579AED1D94D72600850458 /* RootClass.h */,
-				8B579AEE1D94D72600850458 /* RootClass.m */,
+				8B579AEB1D94D72600850458 /* ListAvfm.h */,
+				8B579AEC1D94D72600850458 /* ListAvfm.m */,
+				8B579AED1D94D72600850458 /* ListRootClass.h */,
+				8B579AEE1D94D72600850458 /* ListRootClass.m */,
+				8B960A8C1D984968004B5F6E /* DetailsAvfm.h */,
+				8B960A8D1D984968004B5F6E /* DetailsAvfm.m */,
+				8B960A8E1D984968004B5F6E /* DetailsRootClass.h */,
+				8B960A8F1D984968004B5F6E /* DetailsRootClass.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,6 +276,8 @@
 			children = (
 				8B579B011D95079100850458 /* ListCell.h */,
 				8B579B021D95079100850458 /* ListCell.m */,
+				8B960A891D979AD9004B5F6E /* DetailCell.h */,
+				8B960A8A1D979AD9004B5F6E /* DetailCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -252,11 +297,26 @@
 			name = ListViewController;
 			sourceTree = "<group>";
 		};
+		8B960A851D975A50004B5F6E /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8B960A861D979779004B5F6E /* DetailsViewController.h */,
+				8B960A871D979779004B5F6E /* DetailsViewController.m */,
+				8B960A921D984C43004B5F6E /* DetailsViewController+Datasource.h */,
+				8B960A931D984C43004B5F6E /* DetailsViewController+Datasource.m */,
+				8B960A951D984C63004B5F6E /* DetailsViewController+Delegate.h */,
+				8B960A961D984C63004B5F6E /* DetailsViewController+Delegate.m */,
+			);
+			name = DetailViewController;
+			sourceTree = "<group>";
+		};
 		8BB20AC71D96CCE2007D0607 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				8BB20AC81D96CD0A007D0607 /* ListViewModel.h */,
 				8BB20AC91D96CD0A007D0607 /* ListViewModel.m */,
+				8B30C2D21D98CBF40030270C /* DetailViewModel.h */,
+				8B30C2D31D98CBF40030270C /* DetailViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -266,6 +326,8 @@
 			children = (
 				8BB20ACC1D96D1B4007D0607 /* ListApi.h */,
 				8BB20ACD1D96D1B4007D0607 /* ListApi.m */,
+				8B30C2CF1D98C6C50030270C /* DetailsApi.h */,
+				8B30C2D01D98C6C50030270C /* DetailsApi.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -282,7 +344,9 @@
 		8BB20AD21D97029C007D0607 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8B30C2DB1D98E8D60030270C /* ViewController */,
 				8B579B071D962F0500850458 /* ListViewController */,
+				8B960A851D975A50004B5F6E /* DetailViewController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -414,13 +478,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B30C2DA1D98DD1C0030270C /* loader.gif in Resources */,
 				8B579AC71D94BFD900850458 /* LaunchScreen.storyboard in Resources */,
-				8B579AEF1D94D72600850458 /* Avfm.h in Resources */,
+				8B579AEF1D94D72600850458 /* ListAvfm.h in Resources */,
 				8B579AC41D94BFD900850458 /* Assets.xcassets in Resources */,
-				8B579AF01D94D72600850458 /* Avfm.m in Resources */,
-				8B579AF11D94D72600850458 /* RootClass.h in Resources */,
+				8B579AF01D94D72600850458 /* ListAvfm.m in Resources */,
+				8B579AF11D94D72600850458 /* ListRootClass.h in Resources */,
 				8B579AC21D94BFD900850458 /* Main.storyboard in Resources */,
-				8B579AF21D94D72600850458 /* RootClass.m in Resources */,
+				8B579AF21D94D72600850458 /* ListRootClass.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,18 +648,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B579AF41D94DB5600850458 /* Avfm.m in Sources */,
+				8B30C2DE1D98E8F50030270C /* ViewController.m in Sources */,
+				8B579AF41D94DB5600850458 /* ListAvfm.m in Sources */,
+				8B30C2D11D98C6C50030270C /* DetailsApi.m in Sources */,
 				8BB20ACE1D96D1B4007D0607 /* ListApi.m in Sources */,
 				8B579B031D95079100850458 /* ListCell.m in Sources */,
 				8B579AFE1D94FC8C00850458 /* ListViewController+DataSource.m in Sources */,
+				8B960A971D984C63004B5F6E /* DetailsViewController+Delegate.m in Sources */,
+				8B960A941D984C43004B5F6E /* DetailsViewController+Datasource.m in Sources */,
+				8B960A881D979779004B5F6E /* DetailsViewController.m in Sources */,
 				8B579B061D962B2300850458 /* ListViewController+FlowLayout.m in Sources */,
 				8BB20ACA1D96CD0A007D0607 /* ListViewModel.m in Sources */,
 				8BB20AD71D970312007D0607 /* ListViewManager.m in Sources */,
-				8B579AF61D94DB5600850458 /* RootClass.m in Sources */,
+				8B960A901D984968004B5F6E /* DetailsAvfm.m in Sources */,
+				8B579AF61D94DB5600850458 /* ListRootClass.m in Sources */,
 				8B579ABF1D94BFD900850458 /* ListViewController.m in Sources */,
 				8B579ABC1D94BFD900850458 /* AppDelegate.m in Sources */,
 				8B579AB91D94BFD900850458 /* main.m in Sources */,
+				8B960A911D984968004B5F6E /* DetailsRootClass.m in Sources */,
+				8B960A8B1D979AD9004B5F6E /* DetailCell.m in Sources */,
 				8B579AFB1D94FC6A00850458 /* ListViewController+Delegate.m in Sources */,
+				8B30C2D41D98CBF40030270C /* DetailViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,7 +765,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -733,7 +807,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

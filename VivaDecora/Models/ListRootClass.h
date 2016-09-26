@@ -7,8 +7,8 @@
 @import Foundation;
 #import "JSONMOdel.h"
 
-#import "Avfm.h"
+#import "ListAvfm.h"
 
-@interface RootClass : JSONModel
-@property (nonatomic, strong) NSArray * avfms;
+@interface ListRootClass : JSONModel
+@property (nonatomic, strong) NSArray<ListAvfm*> *avfms;
 @end

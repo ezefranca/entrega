@@ -8,7 +8,7 @@
 #import "JSONMOdel.h"
 
 
-@interface Avfm : JSONModel
+@interface ListAvfm : JSONModel
 
 @property (nonatomic, strong) NSString * avatar;
 @property (nonatomic, strong) NSString * away;

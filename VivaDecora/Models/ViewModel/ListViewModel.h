@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Avfm.h"
+#import "ListAvfm.h"
+
+#define BASE_IMAGE_URL @"http://aviewfrommyseat.com/wallpaper/"
 
 @interface ListViewModel : NSObject
 
-@property (strong, nonatomic) Avfm *model;
--(instancetype)initWithModel:(Avfm*)model;
+@property (strong, nonatomic) ListAvfm *model;
+-(instancetype)initWithModel:(ListAvfm*)model;
 
 @property (nonatomic, strong) NSString * avatar;
 @property (nonatomic, strong) NSString * away;

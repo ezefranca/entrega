@@ -10,7 +10,7 @@
 
 @implementation ListViewModel
 
--(instancetype)initWithModel:(Avfm *)model {
+-(instancetype)initWithModel:(ListAvfm *)model {
     self = [super init];
     self.model = model;
     if (self) {
@@ -27,7 +27,7 @@
     self.featured = _model.featured;
     self.home = _model.home;
     self.homeId = _model.homeId;
-    self.image = _model.image;
+    self.image = [NSString stringWithFormat:@"%@%@", BASE_IMAGE_URL, _model.image];
     self.index = _model.index;
     self.leagueId = _model.leagueId;
     self.member = _model.member;

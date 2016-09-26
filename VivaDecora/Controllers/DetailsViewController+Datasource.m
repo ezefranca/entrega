@@ -1,14 +1,14 @@
 //
-//  ListViewController+DataSource.m
+//  DetailsViewController+Datasource.m
 //  VivaDecora
 //
-//  Created by Ezequiel on 9/23/16.
+//  Created by Ezequiel on 25/09/16.
 //  Copyright © 2016 Ezequiel França @ezefranca. All rights reserved.
 //
 
-#import "ListViewController+DataSource.h"
+#import "DetailsViewController+Datasource.h"
 
-@implementation ListViewController (DataSource)
+@implementation DetailsViewController (DataSource)
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
@@ -16,7 +16,7 @@
 
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.manager.models.count;
+    return 1;
 }
 
 
@@ -25,12 +25,12 @@
 }
 
 -(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(nonnull UICollectionViewCell *)cell forItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    self.cell = (ListCell *)cell;
-    [self.cell setup:[self.manager.models objectAtIndex:indexPath.row]];
+    self.cell = (DetailCell *)cell;
+    //[self.cell setup:[self.manager.models objectAtIndex:indexPath.row]];
 }
 
 -(ListCell *)getReusableUICollectionViewCell: (UICollectionView *)collectionView forIndexPath:(NSIndexPath *)indexPath{
-    self.cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_LIST_REUSE_IDENTIFIER forIndexPath:indexPath];
+    self.cell = [collectionView dequeueReusableCellWithReuseIdentifier:CELL_DETAIL_REUSE_IDENTIFIER forIndexPath:indexPath];
     return self.cell;
 }
 

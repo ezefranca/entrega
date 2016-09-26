@@ -13,5 +13,4 @@
 @interface ListViewManager : NSObject
 @property (strong, nonatomic) NSMutableArray<ListViewModel*> *models;
 -(instancetype)initWithViewModels:(NSMutableArray<ListViewModel*>*)models;
-
 @end

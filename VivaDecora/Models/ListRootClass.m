@@ -6,9 +6,9 @@
 
 
 
-#import "RootClass.h"
+#import "ListRootClass.h"
 
-@interface RootClass ()
+@interface ListRootClass ()
 @end
-@implementation RootClass
+@implementation ListRootClass
 @end
