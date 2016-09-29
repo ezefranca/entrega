@@ -45,7 +45,6 @@
 }
 
 -(void)fetch:(NSString *)URLString parameters:(id)parameters success:(void (^)(NSMutableArray<id> * _Nonnull result))success failure:(void (^)(NSURLSessionTask * _Nullable task, NSError * _Nonnull error))failure{
-    NSLog(@"%@", parameters);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:URLString parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         result = [[NSMutableArray alloc]init];

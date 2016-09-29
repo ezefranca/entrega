@@ -16,7 +16,7 @@
 
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 1;
+    return self.manager.models.count;
 }
 
 
@@ -26,7 +26,7 @@
 
 -(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(nonnull UICollectionViewCell *)cell forItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
     self.cell = (DetailCell *)cell;
-    //[self.cell setup:[self.manager.models objectAtIndex:indexPath.row]];
+    [self.cell setup:[self.manager.models objectAtIndex:indexPath.row]];
 }
 
 -(ListCell *)getReusableUICollectionViewCell: (UICollectionView *)collectionView forIndexPath:(NSIndexPath *)indexPath{

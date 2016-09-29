@@ -32,9 +32,27 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testTouchCell {
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [[app.collectionViews.cells.otherElements containingType:XCUIElementTypeStaticText identifier:@"Turner Field"].element tap];
+    [app.navigationBars[@"DetailsView"].buttons[@"Viva Decora"] tap];
+    
+}
+
+-(void)testScroll {
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *collectionView = [[[[[app.otherElements containingType:XCUIElementTypeNavigationBar identifier:@"Viva Decora"] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeCollectionView].element;
+    [collectionView tap];
+    [collectionView swipeUp];
+    [collectionView swipeUp];
+    [collectionView swipeUp];
+    [collectionView swipeUp];
+    [collectionView swipeUp];
+    [collectionView swipeUp];
+    [collectionView swipeUp];
+    [collectionView tap];
 }
 
 @end

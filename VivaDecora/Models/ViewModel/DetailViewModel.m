@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewModel.h"
+#import <UIKit/UIKit.h>
 
 @implementation DetailViewModel
 
@@ -22,35 +23,39 @@
 -(void)setValues{
     
     self.address = _model.address;
-    self.averageRating = _model.averageRating;
+    self.average_rating = _model.average_rating;
     self.background = _model.background.stringValue;
     self.city = _model.city;
-    self.cityId = _model.cityId.stringValue;
+    self.city_id = _model.city_id.stringValue;
     self.country = _model.country;
     self.defunct = _model.defunct.stringValue;
-    self.favoriteCount = _model.favoriteCount;
+    self.favorite_count = _model.favorite_count;
     self.gps = _model.gps;
     self.lat = _model.lat;
     self.metro = _model.metro;
     self.name = _model.name;
-    self.newestImage = _model.newestImage;
+    self.newest_image = [NSString stringWithFormat:@"http://aviewfrommyseat.com/photos/%@", _model.newest_image];
     self.phone = _model.phone;
-    self.plCity = _model.plCity;
-    self.plState = _model.plState;
-    self.primaryTickets = _model.primaryTickets;
-    self.ratingCount = _model.ratingCount;
+    self.pl_city = _model.pl_city;
+    self.pl_state = _model.pl_state;
+    self.primary_tickets = _model.primary_tickets;
+    self.rating_count = _model.rating_count;
     self.sameas = _model.sameas;
-    self.seatsmartId = _model.seatsmartId;
+    self.seatsmart_id = _model.seatsmart_id;
     self.size = _model.size;
     self.state = _model.state;
-    self.stats = _model.stats;
-    self.stubhubId = _model.stubhubId;
+    self.stats = [[NSMutableAttributedString alloc] initWithData:[_model.stats dataUsingEncoding:NSUTF8StringEncoding]
+                                                                             options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
+                                                                                       NSCharacterEncodingDocumentAttribute: [NSNumber numberWithInt:NSUTF8StringEncoding]}
+                                                                  documentAttributes:nil error:nil];
+    self.stubhub_id = _model.stubhub_id;
     self.team = _model.team;
-    self.tiqiqId = _model.tiqiqId;
+    self.tiqiq_id = _model.tiqiq_id;
     self.type = _model.type;
-    self.venueId = _model.venueId;
-    self.venueImages = _model.venueImages;
+    self.venue_id = _model.venue_id;
+    self.venue_images = _model.venue_images;
     self.zip = _model.zip;
+    self.link = _model.link;
 }
 
 @end

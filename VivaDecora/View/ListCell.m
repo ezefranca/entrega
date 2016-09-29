@@ -7,9 +7,13 @@
 //
 
 #import "ListCell.h"
-#import <PINRemoteImage/PINImageView+PINRemoteImage.h>
 
 @implementation ListCell
+
+- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
+{
+    return layoutAttributes;
+}
 
 -(void)setup:(ListViewModel *)model {
     self.titleLabel.text = model.venue;
@@ -18,15 +22,6 @@
     self.countLabel.text = model.views;
     [self.imageView setPin_updateWithProgress:YES];
     [self.imageView pin_setImageFromURL:[NSURL URLWithString:model.image]];
-}
-
-
-- (void)prepareForReuse{
-    [self.imageView pin_setImageFromURL:GIF_URL];
-    self.titleLabel.text = @"...";
-    self.subLabel.text = @"...";
-    self.descLabel.text = @" ";
-    self.countLabel.text = @"..";
 }
 
 -(void)layoutSubviews{

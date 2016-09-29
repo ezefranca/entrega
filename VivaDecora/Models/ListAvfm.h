@@ -10,27 +10,27 @@
 
 @interface ListAvfm : JSONModel
 
-@property (nonatomic, strong) NSString * avatar;
-@property (nonatomic, strong) NSString * away;
-@property (nonatomic, strong) NSString<Optional> * awayId;
-@property (nonatomic, strong) NSString * featured;
-@property (nonatomic, strong) NSString * home;
-@property (nonatomic, strong) NSString<Optional> * homeId;
-@property (nonatomic, strong) NSString * image;
-@property (nonatomic, strong) NSString * index;
-@property (nonatomic, strong) NSString<Optional> * leagueId;
-@property (nonatomic, strong) NSString * member;
-@property (nonatomic, strong) NSString<Optional> * memberName;
-@property (nonatomic, strong) NSString * note;
-@property (nonatomic, strong) NSString<Optional> * photoType;
-@property (nonatomic, strong) NSString * rating;
-@property (nonatomic, strong) NSString * row;
-@property (nonatomic, strong) NSString * seat;
-@property (nonatomic, strong) NSString * section;
-@property (nonatomic, strong) NSString * timestamp;
-@property (nonatomic, strong) NSString * venue;
-@property (nonatomic, strong) NSString<Optional> * venueId;
-@property (nonatomic, strong) NSString * video;
-@property (nonatomic, strong) NSString * views;
+@property (nonatomic, strong) NSString<Optional> * avatar;
+@property (nonatomic, strong) NSString<Optional> * away;
+@property (nonatomic, strong) NSString<Optional> * away_id;
+@property (nonatomic, strong) NSString<Optional> * featured;
+@property (nonatomic, strong) NSString<Optional> * home;
+@property (nonatomic, strong) NSString<Optional> * home_id;
+@property (nonatomic, strong) NSString<Optional> * image;
+@property (nonatomic, strong) NSString<Optional> * index;
+@property (nonatomic, strong) NSString<Optional> * league_id;
+@property (nonatomic, strong) NSString<Optional> * member;
+@property (nonatomic, strong) NSString<Optional> * member_name;
+@property (nonatomic, strong) NSString<Optional> * note;
+@property (nonatomic, strong) NSString<Optional> * photo_type;
+@property (nonatomic, strong) NSString<Optional> * rating;
+@property (nonatomic, strong) NSString<Optional> * row;
+@property (nonatomic, strong) NSString<Optional> * seat;
+@property (nonatomic, strong) NSString<Optional> * section;
+@property (nonatomic, strong) NSString<Optional> * timestamp;
+@property (nonatomic, strong) NSString<Optional> * venue;
+@property (nonatomic, strong) NSString<Optional> * venue_id;
+@property (nonatomic, strong) NSString<Optional> * video;
+@property (nonatomic, strong) NSString<Optional> * views;
 
 @end

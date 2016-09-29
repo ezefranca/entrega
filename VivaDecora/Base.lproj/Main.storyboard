@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--Viva Decora-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ListViewController" sceneMemberID="viewController">
@@ -111,7 +111,7 @@
                             <constraint firstAttribute="trailing" secondItem="MDC-F2-EE5" secondAttribute="trailing" id="xY3-pi-psQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="m6d-rL-lcq"/>
+                    <navigationItem key="navigationItem" title="Viva Decora" id="m6d-rL-lcq"/>
                     <connections>
                         <outlet property="collectionView" destination="MDC-F2-EE5" id="Kam-Fk-YbH"/>
                     </connections>
@@ -166,7 +166,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="501"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loader.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Odw-Z1-PZz" customClass="FLAnimatedImageView"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loader.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Odw-Z1-PZz"/>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Itaquerão (Arena Corinthians)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15X-WG-FST">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -187,10 +187,18 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="views" translatesAutoresizingMaskIntoConstraints="NO" id="lSM-qD-WC4"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="staricon" translatesAutoresizingMaskIntoConstraints="NO" id="lSM-qD-WC4"/>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3R-gW-f43">
                                                     <state key="normal" title="ACESSAR O SITE"/>
+                                                    <connections>
+                                                        <action selector="openUrlTouched:" destination="tN1-KV-K04" eventType="touchUpInside" id="NVg-lE-Gpw"/>
+                                                    </connections>
                                                 </button>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j0s-XC-MYh">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,11 +206,14 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="R0N-8o-PIn" secondAttribute="trailing" id="BsX-CF-fKa"/>
                                             <constraint firstItem="R0N-8o-PIn" firstAttribute="centerX" secondItem="lSM-qD-WC4" secondAttribute="centerX" id="C5L-eA-ME8"/>
                                             <constraint firstItem="15X-WG-FST" firstAttribute="top" secondItem="Odw-Z1-PZz" secondAttribute="bottom" constant="14" id="H0i-Fd-nWw"/>
+                                            <constraint firstAttribute="trailing" secondItem="j0s-XC-MYh" secondAttribute="trailing" constant="8" id="Hey-Wi-yQM"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="yJf-iF-LhR" secondAttribute="trailing" id="ILE-Z5-s1u"/>
                                             <constraint firstItem="Odw-Z1-PZz" firstAttribute="leading" secondItem="e1r-fV-J3L" secondAttribute="leading" id="OW0-OA-chP"/>
                                             <constraint firstItem="lSM-qD-WC4" firstAttribute="leading" secondItem="15X-WG-FST" secondAttribute="trailing" constant="11" id="PrU-Xu-3Ks"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="u3R-gW-f43" secondAttribute="trailing" constant="87" id="Y2j-C1-lfr"/>
+                                            <constraint firstItem="j0s-XC-MYh" firstAttribute="top" secondItem="yJf-iF-LhR" secondAttribute="bottom" constant="9" id="Zgu-ci-kt1"/>
                                             <constraint firstItem="Odw-Z1-PZz" firstAttribute="top" secondItem="e1r-fV-J3L" secondAttribute="top" id="aGW-bP-t46"/>
+                                            <constraint firstItem="j0s-XC-MYh" firstAttribute="leading" secondItem="e1r-fV-J3L" secondAttribute="leading" constant="8" id="ckk-O7-hzb"/>
                                             <constraint firstItem="15X-WG-FST" firstAttribute="top" secondItem="e1r-fV-J3L" secondAttribute="topMargin" constant="234.5" id="gLe-Zn-crr"/>
                                             <constraint firstItem="u3R-gW-f43" firstAttribute="centerX" secondItem="e1r-fV-J3L" secondAttribute="centerX" id="hFk-iw-vPu"/>
                                             <constraint firstItem="lSM-qD-WC4" firstAttribute="top" secondItem="Odw-Z1-PZz" secondAttribute="bottom" constant="14" id="hKJ-eI-3Ep"/>
@@ -213,6 +224,7 @@
                                             <constraint firstItem="YFi-XS-I6t" firstAttribute="leading" secondItem="e1r-fV-J3L" secondAttribute="leadingMargin" constant="5" id="pAb-f5-xQK"/>
                                             <constraint firstItem="yJf-iF-LhR" firstAttribute="top" secondItem="YFi-XS-I6t" secondAttribute="bottom" constant="3" id="rzI-78-zMJ"/>
                                             <constraint firstItem="R0N-8o-PIn" firstAttribute="top" secondItem="lSM-qD-WC4" secondAttribute="bottom" constant="-2.5" id="sjC-9f-Ygc"/>
+                                            <constraint firstItem="u3R-gW-f43" firstAttribute="top" secondItem="j0s-XC-MYh" secondAttribute="bottom" constant="7" id="sra-RZ-ZX2"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="u3R-gW-f43" secondAttribute="bottom" constant="15" id="u4O-uO-Pvr"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="15X-WG-FST" secondAttribute="trailing" constant="53" id="vJ8-1p-yFk"/>
                                             <constraint firstItem="15X-WG-FST" firstAttribute="leading" secondItem="e1r-fV-J3L" secondAttribute="leadingMargin" constant="5" id="vij-JY-oNw"/>
@@ -221,7 +233,9 @@
                                         <connections>
                                             <outlet property="countLabel" destination="R0N-8o-PIn" id="MZA-h8-IfJ"/>
                                             <outlet property="descLabel" destination="yJf-iF-LhR" id="sF0-HU-niB"/>
-                                            <outlet property="imageView" destination="Odw-Z1-PZz" id="cWH-lt-4cf"/>
+                                            <outlet property="detailButton" destination="u3R-gW-f43" id="ed8-l9-5tv"/>
+                                            <outlet property="imageViewDetail" destination="Odw-Z1-PZz" id="4bU-Is-aIt"/>
+                                            <outlet property="statsText" destination="j0s-XC-MYh" id="I28-TB-MIj"/>
                                             <outlet property="subLabel" destination="YFi-XS-I6t" id="PQj-PY-wgu"/>
                                             <outlet property="titleLabel" destination="15X-WG-FST" id="z9a-Kb-hNW"/>
                                         </connections>
@@ -271,6 +285,7 @@
     </scenes>
     <resources>
         <image name="loader.gif" width="441" height="291"/>
+        <image name="staricon" width="25" height="25"/>
         <image name="views" width="25" height="25"/>
     </resources>
 </document>

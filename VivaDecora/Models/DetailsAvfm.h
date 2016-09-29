@@ -13,34 +13,35 @@
 @interface DetailsAvfm : JSONModel
 
 @property (nonatomic, strong) NSString<Optional>  * address;
-@property (nonatomic, strong) NSString<Optional>  * averageRating;
+@property (nonatomic, strong) NSString<Optional>  * average_rating;
 @property (nonatomic, strong) NSNumber<Optional>  * background;
 @property (nonatomic, strong) NSString<Optional>  * city;
-@property (nonatomic, strong) NSNumber<Optional>  * cityId;
+@property (nonatomic, strong) NSNumber<Optional>  * city_id;
 @property (nonatomic, strong) NSString<Optional>  * country;
 @property (nonatomic, strong) NSNumber<Optional>  * defunct;
-@property (nonatomic, strong) NSString<Optional>  * favoriteCount;
+@property (nonatomic, strong) NSString<Optional>  * favorite_count;
 @property (nonatomic, strong) NSString<Optional>  * gps;
 @property (nonatomic, strong) NSString<Optional>  * lat;
+@property (nonatomic, strong) NSString<Optional>  * link;
 @property (nonatomic, strong) NSString<Optional>  * metro;
 @property (nonatomic, strong) NSString<Optional>  * name;
-@property (nonatomic, strong) NSString<Optional>  * newestImage;
+@property (nonatomic, strong) NSString<Optional>  * newest_image;
 @property (nonatomic, strong) NSString<Optional>  * phone;
-@property (nonatomic, strong) NSString<Optional>  * plCity;
-@property (nonatomic, strong) NSString<Optional>  * plState;
-@property (nonatomic, strong) NSString<Optional>  * primaryTickets;
-@property (nonatomic, strong) NSString<Optional>  * ratingCount;
+@property (nonatomic, strong) NSString<Optional>  * pl_city;
+@property (nonatomic, strong) NSString<Optional>  * pl_state;
+@property (nonatomic, strong) NSString<Optional>  * primary_tickets;
+@property (nonatomic, strong) NSString<Optional>  * rating_count;
 @property (nonatomic, strong) NSString<Optional>  * sameas;
-@property (nonatomic, strong) NSString<Optional>  * seatsmartId;
+@property (nonatomic, strong) NSString<Optional>  * seatsmart_id;
 @property (nonatomic, strong) NSString<Optional>  * size;
 @property (nonatomic, strong) NSString<Optional>  * state;
 @property (nonatomic, strong) NSString<Optional>  * stats;
-@property (nonatomic, strong) NSString<Optional>  * stubhubId;
+@property (nonatomic, strong) NSString<Optional>  * stubhub_id;
 @property (nonatomic, strong) NSString<Optional>  * team;
-@property (nonatomic, strong) NSString<Optional>  * tiqiqId;
+@property (nonatomic, strong) NSString<Optional>  * tiqiq_id;
 @property (nonatomic, strong) NSString<Optional>  * type;
-@property (nonatomic, strong) NSString<Optional>  * venueId;
-@property (nonatomic, strong) NSString<Optional>  * venueImages;
+@property (nonatomic, strong) NSString<Optional>  * venue_id;
+@property (nonatomic, strong) NSString<Optional>  * venue_images;
 @property (nonatomic, strong) NSString<Optional>  * zip;
 
 @end

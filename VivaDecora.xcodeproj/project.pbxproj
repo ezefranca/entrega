@@ -12,6 +12,11 @@
 		8B30C2D41D98CBF40030270C /* DetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B30C2D31D98CBF40030270C /* DetailViewModel.m */; };
 		8B30C2DA1D98DD1C0030270C /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B30C2D91D98DD1C0030270C /* loader.gif */; };
 		8B30C2DE1D98E8F50030270C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B30C2DD1D98E8F50030270C /* ViewController.m */; };
+		8B30C2E41D98EDD90030270C /* loading_angle-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B30C2DF1D98EDD90030270C /* loading_angle-mask@2x.png */; };
+		8B30C2E51D98EDD90030270C /* loading_error_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B30C2E01D98EDD90030270C /* loading_error_black@2x.png */; };
+		8B30C2E61D98EDD90030270C /* loading_error_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B30C2E11D98EDD90030270C /* loading_error_white@2x.png */; };
+		8B30C2E71D98EDD90030270C /* loading_success_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B30C2E21D98EDD90030270C /* loading_success_black@2x.png */; };
+		8B30C2E81D98EDD90030270C /* loading_success_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B30C2E31D98EDD90030270C /* loading_success_white@2x.png */; };
 		8B579AB91D94BFD900850458 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579AB81D94BFD900850458 /* main.m */; };
 		8B579ABC1D94BFD900850458 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579ABB1D94BFD900850458 /* AppDelegate.m */; };
 		8B579ABF1D94BFD900850458 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B579ABE1D94BFD900850458 /* ListViewController.m */; };
@@ -40,6 +45,7 @@
 		8BB20ACA1D96CD0A007D0607 /* ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB20AC91D96CD0A007D0607 /* ListViewModel.m */; };
 		8BB20ACE1D96D1B4007D0607 /* ListApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB20ACD1D96D1B4007D0607 /* ListApi.m */; };
 		8BB20AD71D970312007D0607 /* ListViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB20AD61D970312007D0607 /* ListViewManager.m */; };
+		8BBD70AE1D9D26F100BC2ACE /* DetailsViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD70AD1D9D26F100BC2ACE /* DetailsViewManager.m */; };
 		C7EE038A75B58986B3B3367B /* libPods-VivaDecora.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EED24E62813B50FBBC2ABD28 /* libPods-VivaDecora.a */; };
 		FD6422DCB6D349D3C9DFDADE /* libPods-VivaDecoraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B95E5AE3B5520D2F07F6E165 /* libPods-VivaDecoraUITests.a */; };
 /* End PBXBuildFile section */
@@ -74,6 +80,11 @@
 		8B30C2D91D98DD1C0030270C /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
 		8B30C2DC1D98E8F50030270C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controllers/ViewController.h; sourceTree = "<group>"; };
 		8B30C2DD1D98E8F50030270C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controllers/ViewController.m; sourceTree = "<group>"; };
+		8B30C2DF1D98EDD90030270C /* loading_angle-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_angle-mask@2x.png"; sourceTree = "<group>"; };
+		8B30C2E01D98EDD90030270C /* loading_error_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_error_black@2x.png"; sourceTree = "<group>"; };
+		8B30C2E11D98EDD90030270C /* loading_error_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_error_white@2x.png"; sourceTree = "<group>"; };
+		8B30C2E21D98EDD90030270C /* loading_success_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_success_black@2x.png"; sourceTree = "<group>"; };
+		8B30C2E31D98EDD90030270C /* loading_success_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_success_white@2x.png"; sourceTree = "<group>"; };
 		8B579AB41D94BFD900850458 /* VivaDecora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VivaDecora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B579AB81D94BFD900850458 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B579ABA1D94BFD900850458 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +132,8 @@
 		8BB20ACD1D96D1B4007D0607 /* ListApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListApi.m; path = Network/ListApi.m; sourceTree = "<group>"; };
 		8BB20AD51D970312007D0607 /* ListViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewManager.h; path = Manager/ListViewManager.h; sourceTree = "<group>"; };
 		8BB20AD61D970312007D0607 /* ListViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewManager.m; path = Manager/ListViewManager.m; sourceTree = "<group>"; };
+		8BBD70AC1D9D26F100BC2ACE /* DetailsViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsViewManager.h; path = Manager/DetailsViewManager.h; sourceTree = "<group>"; };
+		8BBD70AD1D9D26F100BC2ACE /* DetailsViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsViewManager.m; path = Manager/DetailsViewManager.m; sourceTree = "<group>"; };
 		B89F976D17B975D2A0137439 /* Pods-VivaDecora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecora.release.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecora/Pods-VivaDecora.release.xcconfig"; sourceTree = "<group>"; };
 		B95E5AE3B5520D2F07F6E165 /* libPods-VivaDecoraUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VivaDecoraUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13F0C60F1DC74A213D1E298 /* Pods-VivaDecora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VivaDecora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VivaDecora/Pods-VivaDecora.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +200,31 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
+		8B30C2E91D98EDE40030270C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B30C2EA1D98EDF80030270C /* Necessary Images */,
+				8B579AC01D94BFD900850458 /* Main.storyboard */,
+				8B579AC51D94BFD900850458 /* LaunchScreen.storyboard */,
+				8B579AC31D94BFD900850458 /* Assets.xcassets */,
+				8B579AC81D94BFD900850458 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8B30C2EA1D98EDF80030270C /* Necessary Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B30C2D91D98DD1C0030270C /* loader.gif */,
+				8B30C2DF1D98EDD90030270C /* loading_angle-mask@2x.png */,
+				8B30C2E01D98EDD90030270C /* loading_error_black@2x.png */,
+				8B30C2E11D98EDD90030270C /* loading_error_white@2x.png */,
+				8B30C2E21D98EDD90030270C /* loading_success_black@2x.png */,
+				8B30C2E31D98EDD90030270C /* loading_success_white@2x.png */,
+			);
+			name = "Necessary Images";
+			sourceTree = "<group>";
+		};
 		8B579AAB1D94BFD900850458 = {
 			isa = PBXGroup;
 			children = (
@@ -218,11 +256,7 @@
 				8BB20AD11D97028C007D0607 /* App */,
 				8BB20ACB1D96D183007D0607 /* Network */,
 				8BB20AD31D9702DF007D0607 /* Manager */,
-				8B579AC01D94BFD900850458 /* Main.storyboard */,
-				8B30C2D91D98DD1C0030270C /* loader.gif */,
-				8B579AC31D94BFD900850458 /* Assets.xcassets */,
-				8B579AC51D94BFD900850458 /* LaunchScreen.storyboard */,
-				8B579AC81D94BFD900850458 /* Info.plist */,
+				8B30C2E91D98EDE40030270C /* Resources */,
 				8B579AB71D94BFD900850458 /* Supporting Files */,
 			);
 			path = VivaDecora;
@@ -356,6 +390,8 @@
 			children = (
 				8BB20AD51D970312007D0607 /* ListViewManager.h */,
 				8BB20AD61D970312007D0607 /* ListViewManager.m */,
+				8BBD70AC1D9D26F100BC2ACE /* DetailsViewManager.h */,
+				8BBD70AD1D9D26F100BC2ACE /* DetailsViewManager.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -480,12 +516,17 @@
 			files = (
 				8B30C2DA1D98DD1C0030270C /* loader.gif in Resources */,
 				8B579AC71D94BFD900850458 /* LaunchScreen.storyboard in Resources */,
+				8B30C2E51D98EDD90030270C /* loading_error_black@2x.png in Resources */,
+				8B30C2E41D98EDD90030270C /* loading_angle-mask@2x.png in Resources */,
 				8B579AEF1D94D72600850458 /* ListAvfm.h in Resources */,
+				8B30C2E81D98EDD90030270C /* loading_success_white@2x.png in Resources */,
 				8B579AC41D94BFD900850458 /* Assets.xcassets in Resources */,
 				8B579AF01D94D72600850458 /* ListAvfm.m in Resources */,
 				8B579AF11D94D72600850458 /* ListRootClass.h in Resources */,
 				8B579AC21D94BFD900850458 /* Main.storyboard in Resources */,
+				8B30C2E61D98EDD90030270C /* loading_error_white@2x.png in Resources */,
 				8B579AF21D94D72600850458 /* ListRootClass.m in Resources */,
+				8B30C2E71D98EDD90030270C /* loading_success_black@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +690,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B30C2DE1D98E8F50030270C /* ViewController.m in Sources */,
+				8BBD70AE1D9D26F100BC2ACE /* DetailsViewManager.m in Sources */,
 				8B579AF41D94DB5600850458 /* ListAvfm.m in Sources */,
 				8B30C2D11D98C6C50030270C /* DetailsApi.m in Sources */,
 				8BB20ACE1D96D1B4007D0607 /* ListApi.m in Sources */,

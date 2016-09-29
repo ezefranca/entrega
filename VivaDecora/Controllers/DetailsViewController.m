@@ -18,9 +18,7 @@
     [super viewDidLoad];
     [self.collectionView setContentInset:UIEdgeInsetsMake(-20, 0, 0, 0)];
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
-    NSString *qwer = [self.venue stringByReplacingOccurrencesOfString:@" " withString:@"+"];
-    [self downloadData:qwer];
-    // Do any additional setup after loading the view.
+    [self downloadData:[self venueTitle:self.venue]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -29,16 +27,33 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+
+-(void)downloadData{
+    [self downloadData:[self venueTitle:self.venue]];
 }
 
 - (void)downloadData:(NSString *)venue {
-  
+    [self showLoading];
     [[DetailsApi shared]downloadDetails:self.venue success:^(NSMutableArray<id> * _Nonnull details) {
-        NSLog(@"%@", details);
+        self.manager = [[DetailsViewManager alloc]initWithViewModels: (NSMutableArray<DetailViewModel*>*)details];
+        [[self collectionView]reloadData];
+        [self dismissLoading];
+        [self dismissLoading];
+        
     } failure:^(NSURLSessionTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@", error);
+        [self dismissLoading];
+        [self showErrorWithStatus:error.description];
     }];
+}
+
+-(NSString *)venueTitle:(NSString *)venue {
+    return [venue stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+}
+
+- (IBAction)openUrlTouched:(id)sender {
+
 }
 
 @end

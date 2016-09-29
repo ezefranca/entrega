@@ -19,26 +19,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self teste];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(startRefresh:)
+             forControlEvents:UIControlEventValueChanged];
+    [self.collectionView addSubview:_refreshControl];
+    [self showLoading];
+    [self downloadFeatureVenues];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (void)setup {
+-(void)startRefresh: (UIRefreshControl *)control {
+    [self downloadFeatureVenues];
 }
 
-- (void)teste {
+-(void)downloadData{
+    [self downloadFeatureVenues];
+}
+
+- (void)downloadFeatureVenues {
     
     [[ListApi shared]downloadFeatureVenues:@"50" success:^(NSMutableArray<id> * _Nonnull venues) {
         self.manager = [[ListViewManager alloc]initWithViewModels: (NSMutableArray<ListViewModel*>*)venues];
         [[self collectionView]reloadData];
+        [self dismissLoading];
+        [[self refreshControl]endRefreshing];
     } failure:^(NSURLSessionTask * _Nullable task, NSError * _Nonnull error) {
-        
+        [self dismissLoading];
+        [self showErrorWithStatus:error.description];
     }];
 }
 

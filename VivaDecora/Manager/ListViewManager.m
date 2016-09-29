@@ -7,15 +7,13 @@
 //
 
 #import "ListViewManager.h"
-#import "ListViewModel.h"
 
 @implementation ListViewManager
 
 -(instancetype)initWithViewModels:(NSMutableArray<ListViewModel *> *)models{
     self = [super init];
-    self.models = models;
     if (self) {
-        //[self setValues];
+        self.models = models;
     }
     return self;
 }

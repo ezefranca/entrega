@@ -27,8 +27,6 @@
     [UIView transitionWithView:[collectionView cellForItemAtIndexPath:indexPath] duration:0.1f options: UIViewAnimationOptionCurveLinear animations:animateChangeWidth completion:^(BOOL finished) {
         [[self navigationController]pushViewController:[self detailsController:indexPath] animated:true];
     }];
-    
- 
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{

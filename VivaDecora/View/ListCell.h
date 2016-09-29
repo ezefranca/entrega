@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ListViewModel.h"
 #import "FLAnimatedImageView.h"
+#import <PINRemoteImage/PINImageView+PINRemoteImage.h>
 
 #define GIF_URL [[NSBundle mainBundle]URLForResource: @"loader" withExtension:@"gif"]
 
@@ -23,7 +24,7 @@
 
 @interface ListCell : UICollectionViewCell <CellStyle>
 
-@property (strong, nonatomic) IBOutlet FLAnimatedImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *subLabel;
 @property (strong, nonatomic) IBOutlet UILabel *descLabel;

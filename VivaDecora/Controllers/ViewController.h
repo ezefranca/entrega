@@ -11,9 +11,15 @@
 @interface ViewController : UIViewController
 
 - (void)showLoading;
-- (void)showLoadingWithStatus:(NSString *)status;
-- (void)showSuccessWithStatus:(NSString *)status;
-- (void)showErrorWithStatus:(NSString *)status;
 - (void)dismissLoading;
+
+-(void)downloadData;
+
+-(void)showErrorWithStatus:(NSString  * _Nullable )status :(void (^ __nullable)(UIAlertAction  * _Nullable action))completion;
+-(void)showSuccessWithStatus:(NSString  * _Nullable )status :(void (^ __nullable)(UIAlertAction  * _Nullable action))completion;
+
+
+-(void)showErrorWithStatus:(NSString  * _Nullable )status;
+-(void)showSuccessWithStatus:(NSString  * _Nullable )status ;
 
 @end

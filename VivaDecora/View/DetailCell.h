@@ -7,15 +7,16 @@
 //
 
 #import "ListCell.h"
+#import "DetailViewModel.h"
+#import "FLAnimatedImageView.h"
 
 @interface DetailCell : ListCell
 
-@property (strong, nonatomic) IBOutlet UILabel *status1;
-@property (strong, nonatomic) IBOutlet UILabel *status2;
-@property (strong, nonatomic) IBOutlet UILabel *status3;
-@property (strong, nonatomic) IBOutlet UILabel *status4;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewDetail;
+@property (strong, nonatomic) IBOutlet UITextView *statsText;
+@property (strong, nonatomic) IBOutlet UIButton *detailButton;
 
--(void)setup: (ListViewModel*)model;
+-(void)setup: (DetailViewModel*)model;
 -(void)setShadow:(UIColor*)color;
 
 @end

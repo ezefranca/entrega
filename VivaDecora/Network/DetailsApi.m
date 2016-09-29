@@ -51,7 +51,6 @@
         DetailsRootClass *c = [[DetailsRootClass alloc] initWithDictionary:responseObject error:nil];
         [c.avfms enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL * _Nonnull stop) {
             DetailsAvfm *d = [[DetailsAvfm alloc]initWithDictionary:obj error:nil];
-            NSLog(@"%@", obj);
             model = [[DetailViewModel alloc]initWithModel:d];
             [result addObject:model];
         }];
